@@ -24,7 +24,7 @@ would result in the following values internal to GCC:
 
 As you can see, the first argument (argv[0]) is the name by which the program was called, in this case gcc. Thus, there will always be at least one argument to a program, and argc will always be at least 1.[[2](http://crasseux.com/books/ctutorial/argc-and-argv.html)]
 
-## readFile_arg.c
+### readFile_arg.c
 
 This file utilizes the following arguments post compilation before running the program and then prints each line of the file.
 This ocde does have a constraint for a `MAX_LINE_SIZE = 256` which can be updated or modified if needed.
@@ -38,3 +38,16 @@ After compilation, instruct the program to read the next argument as the file to
 `readFile_arg inputFile.txt`
 
 This should print the file read by the program.
+
+
+## Using SCANF
+
+This is the simplest method, in which the program asks the user to input the filename after prompt.
+
+The program then opens said file, however this pogram only opens one file at a time.
+
+Both `C` files can be modified to read several files if needed.
+
+### readFile_scanf.c
+
+This program prompts the user to input the file to open and read.
