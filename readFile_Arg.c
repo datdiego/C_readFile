@@ -28,9 +28,10 @@ int main(int argc, char* argv[]){
    }
   
     //Prints each line of the file.
-    while (fgets(tmpLine, MAX_LINE_SIZE, f))
+    while (fgets(tmpLine, MAX_LINE_SIZE, f)){
        printf("%s", tmpLine);
-
+    }
+    printf("\n End of file \n");
     // close the file
     fclose(f);
 
